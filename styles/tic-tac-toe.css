@@ -138,11 +138,7 @@
 }
 
 .main-tic-tac-toe-middle-itself-x-winning {
-    background-color: #31C3BD;
-}
-
-.main-tic-tac-toe-middle-itself-x-winning svg {
-    fill: black !important;
+    background-color: rgb(45, 75, 89);
 }
 
 /*
