@@ -1,0 +1,173 @@
+/* MAIN MENU */
+
+.main-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #192a32;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 40px;
+}
+
+/* 
+
+    MAIN MENU PICK MARK
+
+*/
+
+.main-menu-pick-mark {
+    background-color: #1f3540;
+    padding: 20px 25px;
+    width: 500px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    box-shadow: 0 5px 0 #0e181d;
+    border: 1px solid rgba(255,255,255,0.03);
+}
+
+/* MAIN MENU PICK MARK HEADER */
+
+.main-menu-pick-mark-header {
+    color: rgb(168, 191, 201);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* MAIN MENU PICK MARK BUTTON */
+
+.main-menu-pick-mark-button {
+    width: 100%;
+    height: 80px;
+    border-radius: 0.5rem;
+    border: 0;
+    background-color: #0e181d;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+.main-menu-pick-mark-button:focus {
+    outline-width: 2px;
+    outline-style: dotted;
+    outline-color: #f2b137;
+    outline-offset: 3px;
+}
+
+.main-menu-pick-mark-button-indicator {
+    background-color: #a8bfc9;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50%;
+    height: calc(100% - 10px);
+    border-radius: 0.3rem;
+    transition: left 500ms;
+}
+
+.main-menu-pick-mark-button-svg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-menu-pick-mark-button-svg-left {
+    fill: #0e181d;
+    scale: 0.6;
+    transition: fill 500ms;
+}
+
+.main-menu-pick-mark-button-svg-right {
+    fill: #a8bfc9;
+    scale: 0.6;
+    transition: fill 500ms;
+}
+
+.main-menu-pick-mark-button-changed .main-menu-pick-mark-button-indicator {
+    left: calc(50% - 5px);
+}
+
+.main-menu-pick-mark-button-changed .main-menu-pick-mark-button-svg-left {
+    fill: #a8bfc9;
+}
+
+.main-menu-pick-mark-button-changed .main-menu-pick-mark-button-svg-right {
+    fill: #0e181d;
+}
+
+/* MAIN MENU PICK MARK TEXT */
+
+.main-menu-pick-mark-text {
+    color: rgb(168, 191, 201);
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+/* 
+
+    MAIN MENU BUTTONS
+
+*/
+
+.main-menu-buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.main-menu-button-itself {
+    width: 500px;
+    padding-block: 18px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    color: rgb(26, 42, 51);
+    border: 0;
+    cursor: pointer;
+}
+
+.main-menu-button-itself:first-of-type {
+    background-color: rgb(242, 177, 55);
+    box-shadow: 0 6px 0 rgb(204, 139, 19);
+}
+
+.main-menu-button-itself:focus {
+    outline-width: 2px;
+    outline-style: dotted;
+    outline-color: #ffffff;
+    outline-offset: 3px;
+}
+
+.main-menu-button-itself:first-of-type:hover {
+    background-color: rgb(255, 194, 80);
+}
+
+.main-menu-button-itself:first-of-type:active {
+    background-color: rgb(255, 189, 67);
+    box-shadow: 0 0 0 rgb(204, 139, 19);
+    transform: translateY(6px);
+}
+
+.main-menu-button-itself:last-of-type {
+    background-color: rgb(49, 195, 189);
+    box-shadow: 0 6px 0 rgb(31, 127, 124);
+}
+
+.main-menu-button-itself:last-of-type:hover {
+    background-color: rgb(59, 234, 228);
+}
+
+.main-menu-button-itself:last-of-type:active {
+    background-color: rgb(55, 221, 215);
+    box-shadow: 0 0 0 rgb(31, 127, 124);
+    transform: translateY(6px);
+}
