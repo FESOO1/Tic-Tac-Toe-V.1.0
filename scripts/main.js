@@ -62,7 +62,6 @@ for (let i = 0; i < marks.length; i++) {
         const markState = marks[i].getAttribute('data-mark-container-state');
         const markContainerChild = document.createElement('div');
         markContainerChild.classList.add('main-tic-tac-toe-middle-itself-svg-container');
-
     });
 };
 
