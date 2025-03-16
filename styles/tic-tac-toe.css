@@ -137,6 +137,14 @@
     fill: #F2B137;
 }
 
+.main-tic-tac-toe-middle-itself-x-winning {
+    background-color: #31C3BD;
+}
+
+.main-tic-tac-toe-middle-itself-x-winning .main-tic-tac-toe-middle-itself-svg-x {
+    fill: rgb(16, 33, 42);
+}
+
 /*
 
     TIC TAC TOE TOP BOTTOM
