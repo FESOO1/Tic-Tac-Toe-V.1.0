@@ -36,7 +36,7 @@ for (let i = 0; i < marks.length; i++) {
 // HOVERING OVER THE MARK CONTAINERS
 
 for (let i = 0; i < marks.length; i++) {
-    marks[i].addEventListener('mouseenter', () => {
+    /* marks[i].addEventListener('mouseenter', () => {
         const markState = marks[i].getAttribute('data-mark-container-state');
         if (markState === 'empty') {
             const markContainerChild = document.createElement('div');
@@ -55,7 +55,7 @@ for (let i = 0; i < marks.length; i++) {
     // REMOVING THE ELEMENT
     marks[i].addEventListener('mouseleave', () => {
         marks[i].innerHTML = '';
-    });
+    }); */
 
     // MARKING
     marks[i].addEventListener('click', () => {
@@ -63,16 +63,6 @@ for (let i = 0; i < marks.length; i++) {
         const markContainerChild = document.createElement('div');
         markContainerChild.classList.add('main-tic-tac-toe-middle-itself-svg-container');
 
-        if (obj.isXsTurn === 'X') {
-            if (markState === 'empty') {
-                markContainerChild.innerHTML = '<svg class="main-tic-tac-toe-middle-itself-svg-x" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M15.002 1.147 32 18.145 48.998 1.147a3 3 0 0 1 4.243 0l9.612 9.612a3 3 0 0 1 0 4.243L45.855 32l16.998 16.998a3 3 0 0 1 0 4.243l-9.612 9.612a3 3 0 0 1-4.243 0L32 45.855 15.002 62.853a3 3 0 0 1-4.243 0L1.147 53.24a3 3 0 0 1 0-4.243L18.145 32 1.147 15.002a3 3 0 0 1 0-4.243l9.612-9.612a3 3 0 0 1 4.243 0Z" fill="#31C3BD"></path></svg>';
-
-                marks[i].appendChild(markContainerChild);
-                console.log(true);
-            };
-        } else {
-
-        };
     });
 };
 
