@@ -142,7 +142,7 @@
 }
 
 .main-tic-tac-toe-middle-itself-x-winning svg {
-    fill: rgb(16, 33, 42);
+    fill: rgb(16, 33, 42) !important;
 }
 
 /*
