@@ -62,6 +62,17 @@ for (let i = 0; i < marks.length; i++) {
         const markState = marks[i].getAttribute('data-mark-container-state');
         const markContainerChild = document.createElement('div');
         markContainerChild.classList.add('main-tic-tac-toe-middle-itself-svg-container');
+
+        if (obj.isXsTurn === true) {
+            if (markState === 'empty') {
+                markContainerChild.innerHTML = obj.markSVGs[obj.playerMark];
+
+                marks[i].appendChild(markContainerChild);
+                marks[i].setAttribute('data-mark-container-state', 'occupied-by-player-one');
+            };
+        } else {
+            
+        };
     });
 };
 
