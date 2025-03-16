@@ -141,6 +141,10 @@
     background-color: #31C3BD;
 }
 
+.main-tic-tac-toe-middle-itself-x-winning svg {
+    fill: black !important;
+}
+
 /*
 
     TIC TAC TOE TOP BOTTOM
