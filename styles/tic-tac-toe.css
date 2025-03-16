@@ -20,6 +20,14 @@
     justify-content: space-between;
 }
 
+/* TIC TAC TOE TOP LOGO CONTAINER */
+
+.main-tic-tac-toe-top-logo-container {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+}
+
 /* TIC TAC TOE TOP TURN */
 
 .main-tic-tac-toe-top-turn {
@@ -87,6 +95,8 @@
     gap: 25px;
 }
 
+/* TIC TAC TOE TOP MIDDLE ITSELF */
+
 .main-tic-tac-toe-middle-itself {
     border-radius: 1rem;
     background-color: rgb(31, 54, 65);
@@ -106,4 +116,47 @@
 
 .main-tic-tac-toe-middle-itself-svg-o {
     fill: #F2B137;
+}
+
+/*
+
+    TIC TAC TOE TOP BOTTOM
+
+*/
+
+.main-tic-tac-toe-bottom {
+    width: var(--width);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.main-tic-tac-toe-bottom-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    padding-block: 10px;
+    border-radius: 1rem;
+}
+
+.main-tic-tac-toe-bottom-inner-subheader {
+    font-size: 0.75rem;
+}
+
+.main-tic-tac-toe-bottom-inner-text {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.main-tic-tac-toe-bottom-inner:first-of-type {
+    background-color: rgb(49, 195, 189);
+}
+
+.main-tic-tac-toe-bottom-inner:nth-of-type(2) {
+    background-color: rgb(168, 191, 201);
+}
+
+.main-tic-tac-toe-bottom-inner:last-of-type {
+    background-color: rgb(242, 177, 55);
 }
