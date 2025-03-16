@@ -2,11 +2,16 @@
 
 .main-menu {
     width: 100%;
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     row-gap: 40px;
+}
+
+.main-menu-hidden {
+    display: none;
 }
 
 /* 

@@ -1,0 +1,109 @@
+/* TIC TAC TOE */
+
+.main-tic-tac-toe {
+    --width: 500px; 
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+/* 
+
+    TIC TAC TOE TOP
+
+*/
+
+.main-tic-tac-toe-top {
+    width: var(--width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* TIC TAC TOE TOP TURN */
+
+.main-tic-tac-toe-top-turn {
+    background-color: rgb(31, 54, 65);
+    height: 52px;
+    padding-inline: 25px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 0 rgb(16, 33, 42);
+}
+
+.main-tic-tac-toe-top-turn-svg-container {
+    display: flex;
+}
+
+.main-tic-tac-toe-top-turn-svg-container-svg {
+    zoom: 0.25;
+    fill: rgb(168, 191, 201);
+}
+
+.main-tic-tac-toe-top-turn-text {
+    color: rgb(168, 191, 201);
+    font-weight: 700;
+}
+
+/* TIC TAC TOE TOP BUTTON */
+
+.main-tic-tac-toe-top-button {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    border: 0;
+    background-color: rgb(168, 191, 201);
+    cursor: pointer;
+    box-shadow: 0 4px 0 rgb(115, 132, 140);
+}
+
+.main-tic-tac-toe-top-button:hover {
+    background-color: rgb(185, 210, 221);
+}
+
+.main-tic-tac-toe-top-button:active {
+    background-color: rgb(176, 199, 209);
+    box-shadow: 0 0 0 rgb(115, 132, 140);
+    transform: translateY(4px);
+}
+
+/* 
+
+    TIC TAC TOE TOP MIDDLE
+
+*/
+
+.main-tic-tac-toe-middle {
+    width: var(--width);
+    height: var(--width);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.main-tic-tac-toe-middle-itself {
+    border-radius: 1rem;
+    background-color: rgb(31, 54, 65);
+    box-shadow: 0 4px 0 rgb(16, 33, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-tic-tac-toe-middle-itself-svg-container {
+    display: flex;
+}
+
+.main-tic-tac-toe-middle-itself-svg-x {
+    fill: #31C3BD;
+}
+
+.main-tic-tac-toe-middle-itself-svg-o {
+    fill: #F2B137;
+}
