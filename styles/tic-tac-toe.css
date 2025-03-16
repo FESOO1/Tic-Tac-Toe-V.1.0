@@ -114,6 +114,10 @@
     border: 0;
 }
 
+.main-tic-tac-toe-middle-itself:disabled {
+    pointer-events: none;
+}
+
 .main-tic-tac-toe-middle-itself:focus {
     outline-width: 2px;
     outline-style: dotted;
