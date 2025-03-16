@@ -111,6 +111,14 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: 0;
+}
+
+.main-tic-tac-toe-middle-itself:focus {
+    outline-width: 2px;
+    outline-style: dotted;
+    outline-color: #ffffff;
+    outline-offset: 3px;
 }
 
 .main-tic-tac-toe-middle-itself-svg-container {

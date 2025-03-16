@@ -2,10 +2,12 @@
 const turnSvgContainer = document.querySelector('.main-tic-tac-toe-top-turn-svg-container');
 
 // MARK CONTAINERS
-const markContainers = document.querySelectorAll('.main-tic-tac-toe-middle-itself');
+const markContainers = document.querySelectorAll('.main-tic-tac-toe-middle-inner');
+const marks = document.querySelectorAll('.main-tic-tac-toe-middle-itself');
 const obj = {
     isXsTurn: true,
     playerMark: 'X',
+    isPlayingAgainstComputer: false,
 };
 
 // CHANGING THE TURNS
@@ -20,15 +22,15 @@ function changingTheTurns() {
 
 // ADDING ATTRIBUTES TO MARK CONTAINERS
 
-for (let i = 0; i < markContainers.length; i++) {
-    markContainers[i].setAttribute('data-mark-container-index', i);
-    markContainers[i].setAttribute('data-mark-container-state', 'empty');
+for (let i = 0; i < marks.length; i++) {
+    marks[i].setAttribute('data-mark-container-index', i);
+    marks[i].setAttribute('data-mark-container-state', 'empty');
 };
 
 // HOVERING OVER THE MARK CONTAINERS
 
-for (let i = 0; i < markContainers.length; i++) {
-    markContainers[i].addEventListener('mouseenter', () => {
+for (let i = 0; i < marks.length; i++) {
+    marks[i].addEventListener('mouseenter', () => {
         const markContainerChild = document.createElement('div');
         markContainerChild.classList.add('main-tic-tac-toe-middle-itself-svg-container');
 
@@ -38,11 +40,27 @@ for (let i = 0; i < markContainers.length; i++) {
             markContainerChild.innerHTML = '<svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M32 0c17.673 0 32 14.327 32 32 0 17.673-14.327 32-32 32C14.327 64 0 49.673 0 32 0 14.327 14.327 0 32 0Zm0 18.963c-7.2 0-13.037 5.837-13.037 13.037 0 7.2 5.837 13.037 13.037 13.037 7.2 0 13.037-5.837 13.037-13.037 0-7.2-5.837-13.037-13.037-13.037Z" fill="#F2B137"></path></svg>';
         };
 
-        markContainers[i].appendChild(markContainerChild);
+        marks[i].appendChild(markContainerChild);
     });
 
     // REMOVING THE ELEMENT
-    markContainers[i].addEventListener('mouseleave', () => {
-        markContainers[i].innerHTML = '';
+    marks[i].addEventListener('mouseleave', () => {
+        marks[i].innerHTML = '';
     });
-};  
+};
+
+// STARTING THE GAME
+
+function startingTheGame() {
+
+};
+
+// CHECKING WHO THE PLAYER IS PLAYING AGAINST
+
+function checkingWhoeThePlayerIsPlayingAgainst() {
+    if (obj.isPlayingAgainstComputer === false) {
+
+    } else {
+
+    };
+};
