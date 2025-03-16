@@ -3,6 +3,7 @@
 .main-tic-tac-toe {
     --width: 460px; 
     display: flex;
+    align-items: center;
     flex-direction: column;
     row-gap: 40px;
 }
@@ -159,4 +160,24 @@
 
 .main-tic-tac-toe-bottom-inner:last-of-type {
     background-color: rgb(242, 177, 55);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 550px) {
+    .main-tic-tac-toe {
+        --width: 400px;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-tic-tac-toe {
+        --width: 360px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-tic-tac-toe {
+        --width: 300px;
+    }
 }
