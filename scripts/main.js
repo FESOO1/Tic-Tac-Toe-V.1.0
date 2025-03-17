@@ -132,23 +132,7 @@ function checkIfTheGameHasBeenWon() {
         markIndexes: [],
         markStates: [],
     };
-    const markState = [3, 6, 9];
-
     // HORIZONTAL
-    for (let i = 0; i < markContainers.length; i++) {
-        for (let iterator = 0; iterator < markContainers.length; iterator++) {
-            marks.markIndexes.push(markContainers[i].children[iterator].getAttribute('data-mark-container-index'));
-            marks.markStates.push(markContainers[i].children[iterator].getAttribute('data-mark-container-state'));
-            const player = obj.playerMark === 'X' ? 'occupied-by-player-one' : 'occupied-by-player-two';
-
-            if (obj.isXsTurn === true) {
-                const {markStates, markIndexes} = marks;
-
-            }
-        };
-    };
-
-    console.log(marks);
 };
 
-/* checkIfTheGameHasBeenWon(); */
+checkIfTheGameHasBeenWon();
