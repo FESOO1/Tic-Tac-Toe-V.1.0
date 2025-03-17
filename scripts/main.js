@@ -128,31 +128,27 @@ startingTheGame();
 // CHECKING IF THE HAS BEEN WON
 
 function checkIfTheGameHasBeenWon() {
-    let occupiedCounter = 0;
+    let marks = {
+        markIndexes: [],
+        markStates: [],
+    };
+    const markState = [3, 6, 9];
 
     // HORIZONTAL
     for (let i = 0; i < markContainers.length; i++) {
         for (let iterator = 0; iterator < markContainers.length; iterator++) {
-            const markState = markContainers[i].children[iterator].getAttribute('data-mark-container-state');
-            const whoseTurn = obj.playerMark === 'X' ? 'occupied-by-player-one' : 'occupied-by-player-two';
+            marks.markIndexes.push(markContainers[i].children[iterator].getAttribute('data-mark-container-index'));
+            marks.markStates.push(markContainers[i].children[iterator].getAttribute('data-mark-container-state'));
+            const player = obj.playerMark === 'X' ? 'occupied-by-player-one' : 'occupied-by-player-two';
 
             if (obj.isXsTurn === true) {
-                if (markState === whoseTurn) {
-                    occupiedCounter++;
+                const {markStates, markIndexes} = marks;
 
-                    if (occupiedCounter === 3) {
-                        obj.gameHasBeenWon = true;
-
-                        console.log(markContainers[i].children[iterator]);
-                        markContainers[i].children[iterator].classList.add('main-tic-tac-toe-middle-itself-x-winning');
-                    };
-                } else {
-                    occupiedCounter = 0;
-                };
-            } else {
-            };
+            }
         };
     };
+
+    console.log(marks);
 };
 
-checkIfTheGameHasBeenWon();
+/* checkIfTheGameHasBeenWon(); */
